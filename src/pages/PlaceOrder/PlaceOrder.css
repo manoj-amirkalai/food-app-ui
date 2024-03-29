@@ -4,8 +4,13 @@
   justify-content: space-between;
   gap: 50px;
   margin-top: 100px;
+} .proceed .back{
+  background-color: rgb(0, 0, 0);
 }
-
+.proceed {
+  display: flex;
+  justify-content: space-between;
+}
 .place-order-left {
   width: 100%;
   max-width: max(30%, 500px);
@@ -25,25 +30,24 @@
   border-radius: 4px;
   outline-color: tomato;
 }
-.place-order-left .multi-fields{
-    display: flex;
+.place-order-left .multi-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.place-order-right {
+  width: 100%;
+  max-width: max(40%, 500px);
+}
+
+.place-order.cart-total button {
+  margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+  .place-order {
+    flex-direction: column;
+  }.proceed{
     gap: 10px;
-    }
-    
-    .place-order-right{
-    width: 100%;
-    max-width: max(40%,500px);
-    
-    }
-    
-    .place-order.cårt-total button{
-
-    margin-top: 30px;
-    
-    }
-
-    @media (max-width:500px){
-        .place-order{
-            flex-direction: column;
-        }
-    }
+  }
+}
